@@ -1,0 +1,13 @@
+version: '3'
+
+services: 
+    angular:
+        image: catscs/angular
+        ports: 
+            - "80:4200"
+        volumes: 
+            - ./project/:/usr/src/app
+        command: ng serve --host 0.0.0.0 --poll=2000
+
+#docker run -it --rm -v ~/Desktop/Docker/angular/project:/usr/src/app catscs/angular /bin/bash
+#docker exec -it <nombre del contenedor> /bin/bash
