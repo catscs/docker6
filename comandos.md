@@ -25,3 +25,5 @@ docker network connect flujan db
 
 docker rm -f $(docker ps -aq)
 ```
+
+![imagen ip estatica](images/config-ip-estatica.png)
